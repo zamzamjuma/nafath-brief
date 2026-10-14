@@ -20,13 +20,19 @@ When offline, a first responder app must maintain core functionality by using lo
 Resource: Android Developers: Offline-first architecture - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 ## Networking
+5G network slicing creates logically isolated, end-to-end virtual networks over a shared physical infrastructure, spanning the radio access network, transport, and core. Each slice functions as an independent network tailored with specific Service Level Agreements (SLAs) for latency, bandwidth, and security. For emergency responders, a dedicated slice guarantees prioritized resources and deterministic performance. This ensures critical communications remain uninterrupted and congestion-free, even during major public disasters or extreme network loads.
 
+Resource: NGMN Alliance: 5G White Paper - https://www.ngmn.org/wp-content/uploads/NGMN_5G_White_Paper_V1_0.pdf
 
 ## Cybersecurity
+The incident response lifecycle consists of four main phases: Preparation, Detection and Analysis, Containment, Eradication and Recovery, and Post-Incident Activity. During an attack on the 5G service, responders detect malicious activity via SOC monitoring, isolate affected network components or slices during containment, eradicate threats by patching vulnerabilities, restore service functionality during recovery, and analyze lessons learned to prevent future attacks.
 
+Resource: NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
 
 ## Data
+Star schemas organize data into a central fact table surrounded by denormalized dimension tables, optimizing simple query speed. Snowflake schemas normalize dimension tables into sub-tables to reduce data redundancy, adding join complexity. For daily regional service usage reports, a star schema is better suited. Its simple denormalized structure allows analytical queries and reporting tools to aggregate high-volume network telemetry per region and day quickly and efficiently.
 
+Resource: Databricks: What is a Star Schema? - https://www.databricks.com/glossary/star-schema
 
 ## Misconception in My Track
 
