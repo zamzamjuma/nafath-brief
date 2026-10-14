@@ -35,6 +35,7 @@ Star schemas organize data into a central fact table surrounded by denormalized 
 Resource: Databricks: What is a Star Schema? - https://www.databricks.com/glossary/star-schema
 
 ## Misconception in My Track
-
+In cybersecurity, it's a prevalent misperception that incident response starts as soon as security systems identify an attack. In actuality, preparation is the crucial initial stage that takes place long before any security incident occurs, according to the NIST SP 800-61 framework. Detection and analysis activities will be unsuccessful without adequate planning, which includes creating regulations, implementing monitoring systems, and educating reaction teams. Proactive baseline hardening and pre-established playbooks are necessary for true event preparation, demonstrating that efficient action begins long in advance of the initial alarm triggers.
 
 ## Open Question
+How can Security Orchestration, Automation, and Response (SOAR) playbooks be optimized to automatically isolate compromised 5G network slices without disrupting active emergency responder communications during high-stress cyber attacks?
